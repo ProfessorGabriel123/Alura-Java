@@ -1,6 +1,6 @@
 //nossa função tem que armazernar os comando de som 
-function tocaSomPom() {
-document.querySelector('#som_tecla_pom').play() 
+function tocaSom(idelementoaudio) {
+document.querySelector(idelementoaudio).play() 
 }
 //AO pesquisar o botão com o document.querySelector('.tecla_pom') e clicar nele, .onclick, ele vai puchar a referencia tocaSomPom que é a função criada inicialmente
 function tocaSomClap() {
@@ -19,7 +19,12 @@ const listaDeTeclas = document.querySelectorAll('.tecla'); //criando uma constan
 var a = 0;
 while(a<=listaDeTeclas.length)
 {
-    listaDeTeclas[a].onclick=tocaSomPom;
+    const tecla = listaDeTeclas[a];
+    const instrumento = tecla.classList[1];
+    const iDaudio = `#som_${instrumento}` //aqui criamos um texto dinamido onde o som é fico mas com o $ invocamos o listaDeTeclas[a].classList[1] este recurso do java chama-se template string
+    tecla.onclick=funcion(){
+        tocaSom('#som_tecla_pom');
+    }
     a=a+1;
     console.log(a)//exibe uma mensagem direto no console 
 }
