@@ -5,7 +5,7 @@ if(elementodeaudio!=null && elementodeaudio==='audio'){ elementodeaudio.play();
 }
 }
 const listaDeTeclas = document.querySelectorAll('.tecla'); 
-for(let a=0; a<=listaDeTeclas.length; a++) 
+for(let a=0; a<=listaDeTeclas.length; a++){
     const tecla = listaDeTeclas[a];
     const instrumento = tecla.classList[1];
     const iDaudio = `#som_${instrumento}`
@@ -18,8 +18,11 @@ for(let a=0; a<=listaDeTeclas.length; a++)
         {
             tecla.classList.add('ativa')
         }
+        else{
+            alert('elemento não encontrado')
+        }
     }
     tecla.onkeyup = function(){
         tecla.classList.remove('ativa')
     }
-    
+}    
