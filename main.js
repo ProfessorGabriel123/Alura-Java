@@ -1,9 +1,11 @@
+//nossa função tem que armazernar os comando de som 
+function tocaSomPom(){
+document.querySelector('#som_tecla_pom').play() 
+
+}
 // Ao usar as duas varras voce esta comentando
 document.querySelector('.tecla_pom')
 //Para vazer uma pesquisa no querySelector é necessario dizer em qual local esta sendo pesquisado o elemento, por isso utilizamos o document. antes do querySelector
 //Se for uma Teg coloque o nome da teg direto EX document.querySelector('h1')
 //Se for o nome da Classe coloque o ponto junto EX document.querySelector('.tecla_pom')
 //Se for um Id utilise o # Ex document.querySelector('# tecla_pom')
-
-document.querySelector('#som_tecla_pom').play() 
-//Este comando não funciona incialmente pois a teg scripti foi colocada antes da construção do bory onde se encontra os botões
