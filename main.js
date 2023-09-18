@@ -23,7 +23,7 @@ while(a<=listaDeTeclas.length)
     const instrumento = tecla.classList[1];
     const iDaudio = `#som_${instrumento}` //aqui criamos um texto dinamido onde o som é fico mas com o $ invocamos o listaDeTeclas[a].classList[1] este recurso do java chama-se template string
     tecla.onclick=funcion(){
-        tocaSom('#som_tecla_pom');
+        tocaSom(iDaudio);
     }
     a=a+1;
     console.log(a)//exibe uma mensagem direto no console 
