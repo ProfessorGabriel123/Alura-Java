@@ -17,7 +17,7 @@ document.querySelectorAll('.tecla');
 
 const listaDeTeclas = document.querySelectorAll('.tecla'); //criando uma constante camada listadeteclas armazenando tdodas as teclas
 var a = 0;
-while(a<=9)
+while(a<=listaDeTeclas.length)
 {
     listaDeTeclas[a].onclick=tocaSomPom;
     a=a+1;
