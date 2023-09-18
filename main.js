@@ -36,6 +36,8 @@ for(let a=0; a<=listaDeTeclas.length;a++) //a diferença é que quando ocorre um
     tecla.onclick=funcion(){
         tocaSom(iDaudio);
     }
-
+    tecla.onkeydown = funcion(){
+        tecla.classList.add('ativa')
+    }
     /*console.log(a)//exibe uma mensagem direto no console */
 }
