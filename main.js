@@ -15,5 +15,11 @@ document.querySelector('.tecla_pom');
 document.querySelectorAll('.tecla');
 /*Este comando pesquesa todos os elementos com a classe tecla*/
 
-const listaDeTeclas = document.querySelectorAll('.tecla');
-listaDeTeclas[0].onclick=tocaSomPom;
+const listaDeTeclas = document.querySelectorAll('.tecla'); //criando uma constante camada listadeteclas armazenando tdodas as teclas
+var a = 0;
+while(a<=9)
+{
+    listaDeTeclas[0].onclick=tocaSomPom;
+    a=a+1;
+    console.log(a)
+}
