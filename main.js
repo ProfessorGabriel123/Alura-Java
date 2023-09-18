@@ -36,8 +36,8 @@ for(let a=0; a<=listaDeTeclas.length;a++) //a diferença é que quando ocorre um
     tecla.onclick=funcion(){
         tocaSom(iDaudio);
     }
-    tecla.onkeydown = funcion(){//se a tecla for ativada adicione ativa na classe dos botoes
-        tecla.classList.add('ativa')
+    tecla.onkeydown = funcion(evento){//se a tecla for ativada adicione ativa na classe dos botoes
+        if(evento.code === 'Space'||evento.code === 'Enter'){tecla.classList.add('ativa')}
     }
     tecla.onkeyup = function(){//se a tecla deixar de ser precionada remover ativa na classe dos botoes
         tecla.classList.remove('ativa')
