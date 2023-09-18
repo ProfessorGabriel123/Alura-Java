@@ -2,9 +2,8 @@
 function tocaSom(Seletoraudio) {
 const elementodeaudio = document.querySelector(Seletoraudio).play() 
 if(elementodeaudio===null){alert('elemento não encontrado');}
-if(elementodeaudio!=null){
-    if(elementodeaudio==='audio'){
-    elementodeaudio.play();}
+if(elementodeaudio!=null && elementodeaudio==='audio'){ // && significa "e"
+    elementodeaudio.play();
 }
 function tocaSomClap() {
     document.querySelector('#som_tecla_clap').play()
