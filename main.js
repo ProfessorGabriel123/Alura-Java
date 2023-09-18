@@ -5,4 +5,5 @@ document.querySelector('.tecla_pom')
 //Se for o nome da Classe coloque o ponto junto EX document.querySelector('.tecla_pom')
 //Se for um Id utilise o # Ex document.querySelector('# tecla_pom')
 
-document.querySelector('#som_tecla_pom').play()
+document.querySelector('#som_tecla_pom').play() 
+//Este comando não funciona incialmente pois a teg scripti foi colocada antes da construção do bory onde se encontra os botões
