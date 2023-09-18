@@ -19,7 +19,7 @@ const listaDeTeclas = document.querySelectorAll('.tecla'); //criando uma constan
 var a = 0;
 while(a<=9)
 {
-    listaDeTeclas[0].onclick=tocaSomPom;
+    listaDeTeclas[a].onclick=tocaSomPom;
     a=a+1;
-    console.log(a)
+    console.log(a)//exibe uma mensagem direto no console 
 }
