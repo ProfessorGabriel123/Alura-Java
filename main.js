@@ -16,7 +16,7 @@ document.querySelectorAll('.tecla');
 /*Este comando pesquesa todos os elementos com a classe tecla*/
 
 const listaDeTeclas = document.querySelectorAll('.tecla'); //criando uma constante camada listadeteclas armazenando tdodas as teclas
-var a = 0;
+/*var a = 0;
 while(a<=listaDeTeclas.length)
 {
     const tecla = listaDeTeclas[a];
@@ -27,4 +27,15 @@ while(a<=listaDeTeclas.length)
     }
     a=a+1;
     console.log(a)//exibe uma mensagem direto no console 
+}*/
+for(let a=0; a<=listaDeTeclas.length;a++) //a diferença é que quando ocorre uma repetição a=a+1 acontece no final, alem de poder declarar uma variavel ja no incicio
+{
+    const tecla = listaDeTeclas[a];
+    const instrumento = tecla.classList[1];
+    const iDaudio = `#som_${instrumento}` //aqui criamos um texto dinamido onde o som é fico mas com o $ invocamos o listaDeTeclas[a].classList[1] este recurso do java chama-se template string
+    tecla.onclick=funcion(){
+        tocaSom(iDaudio);
+    }
+
+    /*console.log(a)//exibe uma mensagem direto no console */
 }
