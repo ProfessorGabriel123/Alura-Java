@@ -1,10 +1,8 @@
-function tocaSom(Seletoraudio) {
+function tocaSom(Seletoraudio){
 const elementodeaudio = document.querySelector(Seletoraudio).play() 
 if(elementodeaudio===null){alert('elemento não encontrado');}
-if(elementodeaudio!=null && elementodeaudio==='audio'){ 
+if(elementodeaudio!=null && elementodeaudio==='audio'){ elementodeaudio.play();
 }
-function tocaSomClap() {
-    document.querySelector('#som_tecla_clap').play()
 }
 const listaDeTeclas = document.querySelectorAll('.tecla'); //criando uma constante camada listadeteclas armazenando tdodas as teclas
 for(let a=0; a<=listaDeTeclas.length;a++) //a diferença é que quando ocorre uma repetição a=a+1 acontece no final, alem de poder declarar uma variavel ja no incicio
